@@ -1,0 +1,13 @@
+
+
+/.idea/
+# IDE 的文件
+
+*.mca
+*.nbt
+
+/server/versions
+/server/libraries
+/server/.fabric
+/server/logs
+
