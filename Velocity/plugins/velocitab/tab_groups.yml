@@ -16,13 +16,13 @@ groups:
     prefix: ''
     suffix: ''
   servers:
+  - lobby
+  - hub
   - survival
   - minigames
   - skyblock
-  - hub
-  - creative
   - prison
-  - lobby
+  - creative
   sorting_placeholders:
   - '%role_weight%'
   - '%username_lower%'

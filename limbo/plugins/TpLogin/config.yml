@@ -1,0 +1,11 @@
+#检查更新
+checkupdata: true
+#虚空掉落传回
+Void: true
+location:
+  world: world
+  x: -104.5
+  y: 28
+  z: -4.5
+  yaw: -175.0
+

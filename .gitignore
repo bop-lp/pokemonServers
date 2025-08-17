@@ -29,5 +29,22 @@
 /Velocity/plugins/venturechat/PlayerData
 # venturechat
 
+#############
+# limbo
+#############
+# 文件
+/limbo/.console_history
 
+# 文件夹
+/limbo/logs
+/limbo/libraries
+/limbo/cache
+/limbo/versions
+
+/limbo/plugins/.paper-remapped
+
+/limbo/world/stats
+/limbo/world/playerdata
+/limbo/world/datapacks
+/limbo/world/advancements
 
