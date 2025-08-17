@@ -47,6 +47,22 @@
 - 已使用端口
     - 38101
 
+## limbo (边缘服务器)
+
+- 服务器信息
+  - paper
+  - 1.21.1
+  - 端口
+    - 37801
+
+- 插件
+  - [LuckPerms](https://luckperms.net/)
+    - 权限系统
+  - [SkinsRestorer](https://modrinth.com/plugin/skinsrestorer)
+    - 离线玩家皮肤修复
+  - [TpLogin](https://klpbbs.com/thread-128739-1-1.html)
+    - 轻量型玩家登录点
+
 ## atlas (大地图)
 
 
