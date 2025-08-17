@@ -1,0 +1,194 @@
+# Config version. Do not change this
+config-version = "2.7"
+
+# What port should the proxy be bound to? By default, we'll bind to all addresses on port 25565.
+bind = "0.0.0.0:25565"
+
+# MOTD 应该是什么？当玩家将您的服务器添加到
+# 他们的服务器列表。仅接受 MiniMessage 格式。
+motd = "<#09add3>A Velocity Server"
+
+# 对于最大玩家数量，我们应该显示什么？（Velocity 不支持上限
+# 在线玩家数量。
+show-max-players = 2025
+
+# 我们应该使用 Mojang 对玩家进行身份验证吗？默认情况下，此选项处于打开状态。
+online-mode = true
+
+# 代理是否应该执行新的公钥安全标准？默认情况下，此选项处于打开状态。
+force-key-authentication = true
+
+# 如果客户端从该代理发送的 ISP/AS 与 Mojang 的 ISP/AS 不同
+# 认证服务器，玩家被踢出。这不允许某些 VPN 和代理
+# 连接，但是一种薄弱的保护形式。
+prevent-client-proxy-connections = false
+
+# 我们应该将 IP 地址和其他数据转发到后端服务器吗？
+# 可用选项：
+# - “none”：不会进行转发。所有玩家似乎都在连接
+# 来自代理，并且将具有离线模式 UUID。
+# - “legacy”：以 BungeeCord 兼容格式转发玩家 IP 和 UUID。使用这个
+# 如果您使用 Minecraft 1.12 或更低版本运行服务器。
+# - “bungeeguard”：以 BungeeGuard 支持的格式转发玩家 IP 和 UUID
+# 插件。如果您运行使用 Minecraft 1.12 或更低版本的服务器，并且
+# 无法实现网络级防火墙（在共享主机上）。
+# - “modern”：在登录过程中转发玩家 IP 和 UUID，使用
+# Velocity 的原生转发。仅适用于 Minecraft 1.13 或更高版本。
+player-info-forwarding-mode = "modern"
+
+# 如果您使用的是现代或 BungeeGuard IP 转发，请在此处配置包含唯一密钥的文件。
+# 该文件应采用 UTF-8 编码，而不是空的。
+forwarding-secret-file = "forwarding.secret"
+
+# 宣布您的服务器是否支持 Forge。如果您运行修改后的服务器，我们
+# 建议打开它。
+#
+# 如果您的网络始终运行一个 modpack，请考虑使用 ping-passthrough = “mods”
+# 代替，以便在服务器列表中显示得更好。
+announce-forge = true
+
+# 如果启用（默认为 false）并且代理处于在线模式，则 Velocity 将启动
+# 如果尝试重复连接，则在线的任何现有玩家。
+kick-existing-players = false
+
+# Velocity 是否应该将服务器列表 ping 请求传递给后端服务器？
+# 可用选项：
+# - “disabled”：不会进行直通。velocity.toml 和 server-icon.png
+# 将确定初始服务器列表 ping 响应。
+# - “mods”：仅将后端服务器中的模组列表传递到响应中。
+# 尝试列表中第一个带有模组列表的服务器（或强制主机）将是
+# 使用。如果无法联系到后端服务器，则 Velocity 将不会显示任何
+# 模组信息。
+# - “description”：使用后端服务器的描述和模组列表。第一个
+# 响应的 try（或强制主机）列表中的服务器用于
+# 描述和模组列表。
+# - “all”：使用后端服务器的响应作为代理响应。速度
+# 如果无法联系到服务器，则使用配置。
+ping-passthrough = "DISABLED"
+
+# 如果启用（默认为 false），则代理上的在线玩家示例将可见
+# 将鼠标悬停在服务器列表中的玩家数量上时。
+# 当 ping 直通设置为“description”或“all”时，这不会有任何效果。
+sample-players-in-ping = false
+
+# 如果未启用（默认为 true），玩家 IP 地址将在日志中替换为 <ip 地址 withhold>
+enable-player-address-logging = true
+
+[servers]
+# 在此处配置您的服务器。每个键代表服务器的名称，值
+# 表示要连接的服务器的 IP 地址
+limbo = "127.0.0.1:37801"
+
+atlas = "127.0.0.1:30000"
+# 大地图
+mainCity = "127.0.0.1:30001"
+# 主城
+
+# In what order we should try servers when a player logs in or is kicked from a server.
+try = [
+    "limbo"
+]
+
+[forced-hosts]
+# Configure your forced hosts here.
+#"lobby.example.com" = [
+#    "lobby"
+#]
+#"factions.example.com" = [
+#    "factions"
+#]
+#"minigames.example.com" = [
+#    "minigames"
+#]
+
+[advanced]
+# 在我们压缩 Minecraft 数据包之前，它必须有多大。将其设置为零将
+# 压缩所有数据包，将其设置为 -1 将完全禁用压缩。
+compression-threshold = 256
+
+# 应该进行多少压缩（从 0-9）。默认值为 -1，它使用
+# 默认级别为 6。
+compression-level = -1
+
+# 最后一次连接后允许客户端连接的速度（以毫秒为单位）？由
+# 默认值，这是三秒。通过将此设置为 0 来禁用此功能。
+login-ratelimit = 3000
+
+# 在此处指定连接超时的自定义超时。默认值为 5 秒。
+connection-timeout = 5000
+
+# Specify a read timeout for connections here. The default is 30 seconds.
+read-timeout = 30000
+
+# 启用与 HAProxy 的 PROXY 协议的兼容性。如果你不知道这是干什么用的，那么
+# 不要启用它。
+haproxy-protocol = false
+
+# 在代理上启用 TCP 快速开放支持。要求代理在 Linux 上运行。
+tcp-fast-open = false
+
+# 在 Velocity 上启用 BungeeCord 插件消息传递通道支持。
+bungee-plugin-message-channel = true
+
+# 显示客户端对代理的 ping 请求。
+show-ping-requests = false
+
+# 默认情况下，Velocity 将尝试优雅地处理用户意外的情况
+# 通过尝试丢失
+# 用户返回，读取超时的情况除外。BungeeCord 将断开用户的连接。你
+# 可以禁用此设置以使用 BungeeCord 行为。
+failover-on-unexpected-server-disconnect = true
+
+# 向 1.13+ 客户端声明代理命令。
+announce-proxy-commands = true
+
+# 启用命令日志记录
+log-command-executions = true
+
+# 在连接到代理、切换服务器时启用玩家连接的日志记录
+# 并断开与代理的连接。
+log-player-connections = true
+
+# 允许玩家通过
+# 要接收的传输数据包 （Minecraft 1.20.5）。
+accepts-transfers = false
+
+# 启用对SO_REUSEPORT的支持。这可能有助于代理在多核系统上更好地扩展
+# 具有大量传入连接，并提供比现有
+# 让单个线程接受连接并将其分发给工作线程的策略
+# 线程。默认禁用。需要 Linux 或 macOS。
+enable-reuse-port = false
+
+# 允许客户端在最后一个命令之后发送命令的速度（以毫秒为单位）
+# 默认情况下为 50 毫秒（每秒 20 个命令）
+command-rate-limit = 50
+
+# 我们是否应该在速率受限时将命令转发到后端？
+# 这会将命令转发到服务器，而不是在代理上处理它。
+# 由于大多数服务器实现都有速率限制，这将阻止玩家
+# 无法向服务器发送过多的命令。
+forward-commands-if-rate-limited = true
+
+# 在玩家被踢之前，在达到速率限制后，允许发送多少个命令？
+# 将其设置为 0 或更低将禁用此功能。
+kick-after-rate-limited-commands = 0
+
+# 在最后一个选项卡完成后，允许客户端发送选项卡完成的速度（以毫秒为单位）
+tab-complete-rate-limit = 10
+
+# 在玩家被踢之前，在达到速率限制后，允许发送多少个选项卡完成？
+# 将其设置为 0 或更低将禁用此功能。
+kick-after-rate-limited-tab-completes = 0
+
+[query]
+# 是否启用响应 GameSpy 4 查询响应。
+enabled = false
+
+# 如果启用了查询，查询协议应该在哪个端口监听？
+port = 25565
+
+# 这是报告给查询服务的映射名称。
+map = "Velocity"
+
+# 插件是否应该默认显示在查询响应中
+show-plugins = false

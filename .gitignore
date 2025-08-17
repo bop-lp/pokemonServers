@@ -1,13 +1,33 @@
 
-
 /.idea/
 # IDE 的文件
 
 *.mca
 *.nbt
+# 存档文件
+*.log
+*.log.gz
+# 日志文件
 
-/server/versions
-/server/libraries
-/server/.fabric
-/server/logs
+# Velocity
+/Velocity/logs
+/Velocity/lang
+
+# 编译文件
+/Velocity/plugins/librelogin/lib
+# librelogin
+/Velocity/plugins/luckperms/libs
+/Velocity/plugins/luckperms/translations
+/Velocity/plugins/luckperms/luckperms-h2-v2.mv.db
+# luckperms
+/Velocity/plugins/skinsrestorer/cache
+/Velocity/plugins/skinsrestorer/cooldowns
+/Velocity/plugins/skinsrestorer/locales
+/Velocity/plugins/skinsrestorer/players
+/Velocity/plugins/skinsrestorer/skins
+# skinsrestorer
+/Velocity/plugins/venturechat/PlayerData
+# venturechat
+
+
 
