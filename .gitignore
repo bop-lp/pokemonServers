@@ -52,9 +52,6 @@
 #############
 # arclightMaomCity
 #############
-/arclightMaomCity/mods/Cobblemon-fabric.jar
-/arclightMaomCity/mods/Cobblemon-fabricCopy.jar
-
 /arclightMaomCity/logs
 /arclightMaomCity/cache
 /arclightMaomCity/libraries
@@ -88,4 +85,50 @@
 /arclightMaomCity/plugins/TrMenu/global.db
 /arclightMaomCity/plugins/TrMenu/data.db
 
+/arclightMaomCity/plugins/Dominion/languages
+/arclightMaomCity/plugins/Dominion/dominion.db
+/arclightMaomCity/plugins/Dominion/dominion.db-journal
 
+
+#############
+# arclightAtlas
+#############
+/arclightAtlas/logs
+/arclightAtlas/cache
+/arclightAtlas/libraries
+/arclightAtlas/.fabric
+/arclightAtlas/.arclight
+/arclightAtlas/showdown
+/arclightAtlas/versions
+/arclightAtlas/assets
+
+/arclightAtlas/world/stats
+/arclightAtlas/world/playerdata
+/arclightAtlas/world/datapacks
+/arclightAtlas/world/advancements
+/arclightAtlas/world/pokemon
+/arclightAtlas/world/pokedex
+
+
+/arclightAtlas/plugins/GSit/data
+/arclightAtlas/plugins/GSit/lang
+
+/arclightAtlas/plugins/PlaceholderAPI/expansions
+
+/arclightAtlas/plugins/PlayerPoints/commands
+/arclightAtlas/plugins/PlayerPoints/locale
+/arclightAtlas/plugins/PlayerPoints/playerpoints.db
+
+/arclightAtlas/plugins/RoseGarden/commands/
+/arclightAtlas/plugins/RoseGarden/tmp/
+
+/arclightAtlas/plugins/spark/tmp-client/
+
+/arclightAtlas/plugins/TrMenu/lang/
+/arclightAtlas/plugins/TrMenu/data/
+/arclightAtlas/plugins/TrMenu/global.db
+/arclightAtlas/plugins/TrMenu/data.db
+
+/arclightAtlas/plugins/Dominion/languages
+/arclightAtlas/plugins/Dominion/dominion.db
+/arclightAtlas/plugins/Dominion/dominion.db-journal

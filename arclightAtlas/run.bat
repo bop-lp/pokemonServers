@@ -1,0 +1,1 @@
+java -jar arclight-fabric-1.21.1-1.0.1-8ec9529.jar --nogui

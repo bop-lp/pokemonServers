@@ -1,0 +1,318 @@
+privilege:
+  admin: # Administrator-Member with this flag can manage normal members and groups.
+    default: false
+    enable: true
+    material: NETHER_STAR
+  animal_killing: # Animal Killing-Whether can do harm to animals.
+    default: false
+    enable: true
+    material: COOKED_BEEF
+  anvil: # Anvil-Whether can use anvil.
+    default: false
+    enable: true
+    material: ANVIL
+  beacon: # Beacon-Whether can interact with beacon.
+    default: false
+    enable: true
+    material: BEACON
+  bed: # Bed-Weather can sleep in bed (set spawn point).
+    default: false
+    enable: true
+    material: RED_BED
+  break: # Break Block-Whether can break blocks (including item frame, armor stand).
+    default: false
+    enable: true
+    material: IRON_PICKAXE
+  brew: # Brewing Stand-Whether can use brewing stand.
+    default: false
+    enable: true
+    material: BREWING_STAND
+  button: # Button-Whether can click button.
+    default: false
+    enable: true
+    material: STONE_BUTTON
+  cake: # Cake-Whether can eat cake.
+    default: false
+    enable: true
+    material: CAKE
+  comparer: # Comparer-Whether can interact with comparer.
+    default: false
+    enable: true
+    material: COMPARATOR
+  crafter: # Crafter-Whether can interact with crafter (1.21).
+    default: false
+    enable: true
+    material: CRAFTING_TABLE
+  craft: # Crafting Table-Whether can use crafting table.
+    default: false
+    enable: true
+    material: CRAFTING_TABLE
+  door: # Door-Whether can interact with door (including trapdoor, fence gate).
+    default: false
+    enable: true
+    material: OAK_DOOR
+  dragon_egg: # Dragon Egg-Whether can interact with dragon egg.
+    default: false
+    enable: true
+    material: DRAGON_EGG
+  drop_item: # Drop Item-Whether player can drop item in dominion.
+    default: true
+    enable: true
+    material: IRON_INGOT
+  dye: # Dye-What can dye (sheep, dog collar, cat collar).
+    default: false
+    enable: true
+    material: LIGHT_BLUE_DYE
+  edit_sign: # Edit Sign-Whether can edit sign.
+    default: false
+    enable: true
+    material: OAK_SIGN
+  enchant: # Enchant Table-Whether can use enchant table.
+    default: false
+    enable: true
+    material: ENCHANTING_TABLE
+  ender_pearl: # End Pearl-Whether can throw ender pearl.
+    default: false
+    enable: true
+    material: ENDER_PEARL
+  feed: # Feed Animal-Whether can feed animals.
+    default: false
+    enable: true
+    material: WHEAT
+  fly: # Fly-NOT elytra fly, it's like creative mode fly.
+    default: false
+    enable: false
+    material: ELYTRA
+  glow: # Glow-Like glowing arrow effect.
+    default: false
+    enable: true
+    material: SPECTRAL_ARROW
+  harvest: # Harvest-Whether player can harvest crops.
+    default: false
+    enable: true
+    material: WHEAT
+  honey: # Honey-Whether can interact with hive (to get honey).
+    default: false
+    enable: true
+    material: HONEY_BOTTLE
+  hook: # Hook-Whether can use fishing rod.
+    default: false
+    enable: true
+    material: FISHING_ROD
+  ignite: # Ignite-Whether can ignite fire.
+    default: false
+    enable: true
+    material: FLINT_AND_STEEL
+  item_frame_interactive: # Item Frame Interactive-Whether can interact with item frame (rotate item).
+    default: false
+    enable: true
+    material: ITEM_FRAME
+  jukebox: # Jukebox-Whether can interact with jukebox.
+    default: false
+    enable: true
+    material: JUKEBOX
+  leash: # Leash-Whether to allow leashing animals/mobs/entities.
+    default: false
+    enable: true
+    material: LEAD
+  lectern: # Lectern-Whether can interact with lectern.
+    default: false
+    enable: true
+    material: LECTERN
+  lever: # Lever-Whether can switch lever.
+    default: false
+    enable: true
+    material: LEVER
+  monster_killing: # Monster Killing-Whether can do harm to monsters.
+    default: false
+    enable: true
+    material: IRON_SWORD
+  note_block: # Note Block-Whether can interact with note block.
+    default: false
+    enable: true
+    material: NOTE_BLOCK
+  pick_up: # Pick Up Item-Whether player can pick up items in dominion.
+    default: true
+    enable: true
+    material: DIAMOND_PICKAXE
+  place: # Place Block-Whether can place blocks (normal blocks, item frame, lava, water).
+    default: false
+    enable: true
+    material: GRASS_BLOCK
+  move: # Player Move-Whether player can move in dominion.
+    default: true
+    enable: true
+    material: LEATHER_BOOTS
+  pressure: # Pressure Plate (Player)-Whether player can trigger pressure plate.
+    default: false
+    enable: true
+    material: STONE_PRESSURE_PLATE
+  pvp: # PVP-Damage between players.
+    default: false
+    enable: true
+    material: DIAMOND_SWORD
+  repeater: # Repeater-Whether can change (interact with) repeater.
+    default: false
+    enable: true
+    material: REPEATER
+  anchor: # Respawn Anchor-Weather can set/use respawn anchor.
+    default: false
+    enable: true
+    material: RESPAWN_ANCHOR
+  riding: # Riding-Whether can ride vehicle (boat, minecart, horse etc.).
+    default: false
+    enable: true
+    material: SADDLE
+  shear: # Shear-Whether can cut wool from sheep.
+    default: false
+    enable: true
+    material: SHEARS
+  shoot: # Shooting-Include arrow/snowball/trident/fireball/wind-charge(1.21).
+    default: false
+    enable: true
+    material: BOW
+  sowing: # Sowing-Whether to allow sowing crops (wheat, carrot etc.).
+    default: false
+    enable: true
+    material: WHEAT_SEEDS
+  container: # Container-Chest / Barrel/ ShulkerBox / ArmorStand / Item Frame
+    default: false
+    enable: true
+    material: CHEST
+  hopper: # Special Container-Such as hopper, furnace, dropper, dispenser, blast furnace, smoker.
+    default: false
+    enable: true
+    material: HOPPER
+  teleport: # Teleportation-False means can't teleport to this dominion.
+    default: false
+    enable: true
+    material: ENDER_EYE
+  egg: # Throw Egg-Whether can throw egg.
+    default: false
+    enable: true
+    material: EGG
+  vehicle_destroy: # Vehicle Destroy-Whether can destroy vehicle (boat, minecart).
+    default: false
+    enable: true
+    material: IRON_AXE
+  vehicle_spawn: # Vehicle Spawn-Whether can spawn vehicle (boat, minecart).
+    default: false
+    enable: true
+    material: MINECART
+  villager_killing: # Villager Killing-Whether can do harm to villager.
+    default: false
+    enable: true
+    material: WOODEN_SWORD
+  trade: # Villager Trade-Whether can trade with villager.
+    default: false
+    enable: true
+    material: EMERALD
+environment:
+  animal_move: # Animal Move-Whether animals can move in dominion.
+    default: true
+    enable: false
+    material: CHERRY_FENCE
+  animal_spawn: # Animal Spawn (Breeding)-Whether animals can spawn (including spawn egg & breeding).
+    default: true
+    enable: false
+    material: COW_SPAWN_EGG
+  dragon_break_block: # Ender Dragon Break Block-Whether ender dragon can break blocks.
+    default: false
+    enable: true
+    material: ENDER_DRAGON_SPAWN_EGG
+  ender_man: # Ender Man-False to prevent ender-man from picking up blocks, spawning, teleporting.
+    default: false
+    enable: true
+    material: ENDERMAN_SPAWN_EGG
+  creeper_explode: # Entity Explode (No-TNT)-Creeper/Wither Skull/Ender Crystal/Fireball/Bed/Respawn Anchor.
+    default: false
+    enable: true
+    material: CREEPER_HEAD
+  gravity_block: # Falling Block-Whether gravity block can fall in dominion (false will make them to item).
+    default: false
+    enable: true
+    material: SAND
+  fire_spread: # Fire Spread-Prevent fire spread in dominion.
+    default: false
+    enable: true
+    material: CAMPFIRE
+  flow_in_protection: # Flow In-Prevent external water/lava flow into dominion.
+    default: false
+    enable: true
+    material: WATER_BUCKET
+  hopper_outside: # Hopper (Outside)-False to prevent outside hopper from sucking container in dominion.
+    default: false
+    enable: true
+    material: HOPPER
+  ice_form: # Ice Form-Whether to allow ice to form (prevents Frost Walker).
+    default: false
+    enable: true
+    material: PACKED_ICE
+  ice_melt: # Ice Melt-Whether to allow ice to melt.
+    default: false
+    enable: false
+    material: ICE
+  mob_drop_item: # Mob Drop Item-Whether mob drop item when killed.
+    default: true
+    enable: true
+    material: DIAMOND
+  monster_damage: # Monster Kill Player-Whether monster can do harm to player.
+    default: true
+    enable: false
+    material: SKELETON_SPAWN_EGG
+  monster_move: # Monster Move-Whether monster can move in dominion.
+    default: true
+    enable: false
+    material: CRIMSON_FENCE
+  monster_spawn: # Monster Spawn-Whether monster can spawn (including spawn egg).
+    default: false
+    enable: false
+    material: ZOMBIE_SPAWN_EGG
+  piston_outside: # Piston-False to prevent piston from pushing/pulling blocks across dominion.
+    default: false
+    enable: true
+    material: PISTON
+  trig_pressure_drop: # Pressure Plate (Dropping)-Whether dropping items can trigger pressure plate.
+    default: false
+    enable: true
+    material: LIGHT_WEIGHTED_PRESSURE_PLATE
+  trig_pressure_mob: # Pressure Plate (Mob)-Whether mob (player not included) can trigger pressure plate.
+    default: false
+    enable: true
+    material: HEAVY_WEIGHTED_PRESSURE_PLATE
+  trig_pressure_proj: # Pressure Plate (Projectile)-When projectile (arrow/snowball) can trigger pressure plate.
+    default: false
+    enable: true
+    material: BIRCH_PRESSURE_PLATE
+  item_frame_proj_damage: # Projectile Damage Item Frame-Whether projectile (arrow/snowball) can break item frame.
+    default: false
+    enable: true
+    material: ITEM_FRAME
+  show_border: # Show Border-Show dominion border to player when walking in.
+    default: true
+    enable: true
+    material: BRICK_WALL
+  snow_accumulation: # Snow Accumulation-Whether to allow snow accumulation.
+    default: false
+    enable: false
+    material: SNOW
+  snow_melt: # Snow Melt-Whether to allow snow to melt.
+    default: false
+    enable: false
+    material: SNOW_BLOCK
+  tnt_explode: # TNT Explode-Whether TNT can explode.
+    default: false
+    enable: true
+    material: TNT
+  trample: # Trample Farmland-Whether farmland can be trampled (false means protect farmland).
+    default: false
+    enable: true
+    material: FARMLAND
+  villager_spawn: # Villager Breed-Whether villager can breeding (including spawn egg).
+    default: true
+    enable: false
+    material: VILLAGER_SPAWN_EGG
+  wither_spawn: # Wither Spawn-Whether can spawn wither, and wither' explode.
+    default: false
+    enable: true
+    material: WITHER_SKELETON_SKULL
