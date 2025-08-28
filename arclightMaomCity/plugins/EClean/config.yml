@@ -5,7 +5,7 @@ debug: false
 update: true
 
 # 每次清理的间隔时长, 单位秒
-duration: 600
+duration: 1800
 
 # 清理前的消息
 # 格式 时长: 对应时长的消息

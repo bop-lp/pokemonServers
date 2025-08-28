@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "default": {
+        "[key]": {
+            "regex": "<regex>",
+            "value": null
+        }
+    }
+}
