@@ -1,0 +1,151 @@
+Title: '&1服务器菜单'
+
+Layout:
+  - '#########'
+  - '# A B C #'
+  - '#       #'
+  - '# D E F #'
+  - '#@@@@@@@#'
+  - '# V P * #'
+
+
+
+icons:
+
+  '@':
+    update: [ -1, 10, 15, -1 ]
+    display:
+      material: light_blue_stained_glass_pane
+      name: [
+            '&7我是分割符',
+            '&f我&7是分割符',
+            '&7我&f是&7分割符',
+            '&7我是&7分割符', 
+            '&7我是&e分&7割符',
+            '&7我是&7分&e割&7符',
+            '&7我是&7分割&e符',
+            ]
+      lore: 
+        - - '&7别点我 &f￣へ￣ &7!'
+        - - '&7别点我 &f(。_。) &7!'
+        - - '&7别点我 &fヾ(≧へ≦)〃 &7!'
+      
+    actions:
+      left:
+        - 'tell: &7<分割符> &f别点我了 &f哼~生气啊 <( ￣^￣)<...'
+        - 'tell: &7<分割符> &f(╬▔皿▔)╯ &7!'
+
+
+  '#':
+    update: [ -1, 10, 15, -1 ]
+    display:
+      material: Gray Stained Glass Pane
+      name: [
+            '&7我是占位符',
+            '&f我&7是占位符',
+            '&7我&f是&7占位符',
+            '&7我是&7占位符', 
+            '&7我是&e占&7位符',
+            '&7我是&7占&e位&7符',
+            '&7我是&7占位&e符',
+            ]
+      lore:
+        - - '&7别点我 &f:> &7!'
+        - - '&7别点我 &f:) &7!'
+    actions:
+      left:
+        - 'tell: &7<占位符> &f都说别点我了 &f哼~生气啊 <( ￣^￣)<...'
+      all: 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+
+  P:
+    update: 20
+    display:
+      material: 'head:%player_name%'
+      name: '&2&l欢迎 %player_name% 来到服务器!'
+      lore:
+        - '&8| 玩家信息'
+        # - 'Hello, %player_name%! There''s your profile.'
+        - ''
+        - '&8| &7生命值: &c%player_health_rounded% ♥'
+        - '&8| &7等级: &3Lv.%player_level%'
+        - '&8| &7金钱: &30'
+        - ''
+        - '&8| &7注册日期: &3%player_first_join_date%'
+        - '&8| &7IP: &3%player_ip%'
+        - '&8| &7延迟: ${js: varInt("%player_ping%") < 60 ? "&a" : "&2"}%player_ping% ms'
+        - ''
+        - '&8➥ &7按数字 &66 &7跳高'
+        - ''
+        - '&8%player_uuid%'
+    actions:
+      all: 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+      number_key_6:
+        - 'close'
+        - 'title: `&b&L准备好` &6&l3 10 20 40 &&& sound: ENTITY_ENDER_DRAGON_FLAP-1-0'
+        - 'title: `&3&L准备好` &6&l2 &&& sound: ENTITY_ENDER_DRAGON_FLAP-1-0 {Delay=20}'
+        - 'title: `&9&L准备好` &c&l1 &&& sound: ENTITY_ENDER_DRAGON_FLAP-1-0 {Delay=40}'
+        - 'js: player.setVelocity(player.getVelocity().setY(25)) &&& js: player.setNoDamageTicks(600) &&& sound: ENTITY_ENDER_DRAGON_FLAP-1-1 {Delay=50}'
+        - 'js: player.setVelocity(player.getVelocity().setY(45)) &&& title: &d&L再高一点! &&& sound: ENTITY_ENDER_DRAGON_FLAP-1-2 {Delay=100}'
+
+  V:
+    display:
+      material: 'nether_star'
+      name: '&6充值'
+
+  '*':
+    display:
+      material: 'ender_eye'
+      name: '官网'
+
+
+  A:
+    display:
+      material: 'writable_book'
+      name: '邮箱'
+  
+  B:
+    display:
+      material: 'gold_ingot'
+      name: '商城'
+
+  C:
+    display:
+      material: 'end_crystal'
+      name: '工会'
+  
+  D:
+    display:
+      material: 'grass_block'
+      name: '其他世界'
+  
+  E:
+    display:
+      material: 'lime_terracotta'
+      name: '签到福利'
+  
+  F:
+    display:
+      material: 'liron_sword'
+      name: '排行榜'
+
+
+Functions:
+  query: |-
+    function query() {
+      var data = new Date()
+      var str = ''
+      // 
+      var h = data.getHours()
+      var min = data.getMinutes()
+      if (h < 10) {
+        var str1 = ''
+        var h = str1.concat("0", h)
+      }
+      if (min < 10) {
+        var str2 = ''
+        var min = str2.concat("0", min)
+      }
+
+      return str.concat(h, ":", min)
+    }
+    query()
